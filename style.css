@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img{
+    width: 14%;
+    border: 2px solid white;
+    border-radius: 55px;
+    
+    
+
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    font-size: 22px;
+    padding-left: 50px;
+    
+
+}
+
+.nav-list{
+    width: 70%;
+    /* background-color: black; */
+    display: flex;
+    align-items: center;
+    
+
+
+}
+
+.nav-list li{
+    list-style: none;
+    padding: 15px 20px;
+
+
+}
+
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+.nav-list li a:hover{
+    text-decoration: none;
+    color: rgb(182, 175, 175);
+}
+
+.rightNav{
+    /* background-color: blueviolet; */
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+}
+
+#search{
+    padding: 5px;
+    font-size: 13px;
+    border: 2px solid grey;
+    border-radius: 5px;
+}
+
+.background{
+    background: url('img5.jpg');
+    background-size: cover;
+}
+
+.firstSection{
+    height: 100vh;
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50%;
+    margin: auto;
+    height: 70%;
+    
+}
+.firsthalf{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+
+
+}
+
+.secondHalf{
+    width: 30%;
+
+}
+
+.secondHalf img{
+    width: 115%;
+    border: 3px solid white;
+    border-radius: 30px;
+    display: block;
+    margin-top: 100px;
+
+
+}
+
+.text-big{
+    font-size: 31px;
+    font-weight: bold;
+
+
+}
+
+.text-small{
+    font-size: 19px;
+
+}
+
+
+.btn{
+    padding: 8px 20px;
+    margin: 4px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 15px;
+    background: none;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-sm{
+    padding: 4px 5px;
+    vertical-align: middle;
+}
+
+.btn-sm:hover{
+    color: rgb(243, 243, 245);
+    background-color: black;
+}
+
+.section{
+    /* height: 500px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 60%;
+    margin: auto;
+    padding: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.section-left{
+   flex-direction: row-reverse;
+}
+
+.paras{
+    padding: 0px 65px;
+
+}
+
+.sectionTag{
+    padding: 16px 0;
+}
+
+.sectionSubTag{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.thumbnail img{
+    width: 290px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.contact{
+    background-color: rgb(251, 239, 223);
+    height: 700px;
+}
+
+.text-center{
+    text-align: center;
+    padding: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.form{
+    max-width: 62%;
+    margin: 25px auto;
+}
+
+.form-input{
+    margin: 14px 0;
+    padding: 5px 3px;
+    width: 100%;
+    font-size: 19px;
+    border: 2px solid grey;
+    border-radius: 6px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.btn-dark{
+    color: black;
+    border: 2px solid rgb(5, 5, 5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    
+}
+
+.text-footer{
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+
+}
+
+.burger{
+    display: none;
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 15px;
+
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+
+@media only screen and (max-width: 1464px){
+    .nav-list{
+        flex-direction: column;
+    }
+    .navbar{
+        /* height: 478px; */
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+        width: 100px
+    }
+    .burger{
+        display: block;
+    }
+    .h-nav-resp{
+        height: 72px;
+    }
+    .v-class-resp{
+        opacity: 0;
+    }
+    .section{
+        flex-direction: column-reverse;
+    }
+    .text-small{
+        text-align: center;
+    }
+    .text-big{
+        text-align: center;
+    }
+    .buttons{
+        text-align: center;
+    }
+    .paras{
+        padding: 0px;
+    }
+}
